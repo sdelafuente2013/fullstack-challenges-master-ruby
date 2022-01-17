@@ -3,7 +3,7 @@ def horse_racing_format!(race_array)
   array_descendant = race_array.sort! { |a, b| b <=> a }
   array_descendant_index = []
   array_descendant.each_with_index do |name, index|
-    if array_descendant.first.to_i.instance_of?(Integer)
+    if array_descendant.first.to_i.class == Integer
       array_descendant_index << "#{name}!"
     else
       array_descendant_index << "#{array_descendant.length - index}-#{name}!"
@@ -17,3 +17,6 @@ def horse_racing_format!(race_array)
   #   "#{index}-#{name_horse}!"
   # end
 end
+
+array = ["4-Brigadier Gerard!", "3-Coup de Folie!", "2-Black Caviar!", "1-Abricot du Laudot!"]
+p horse_racing_format!(array)
