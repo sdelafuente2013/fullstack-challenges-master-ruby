@@ -7,15 +7,27 @@ end
 
 def end_game_message(player_score, bank_score)
   # TODO: return (not print!) a message telling if the user won or lost.
-  if player_score > 21
+
+  # Opcion con case-when
+  case
+  when player_score > 21 || player_score < bank_score
     return "Lose"
-  elsif player_score == 21
+  when player_score == 21
     return "Black Jack"
-  elsif player_score > bank_score
-    return "Win"
-  elsif player_score < bank_score
-    return "Lose"
-  elsif player_score == bank_score
+  when player_score == bank_score
     return "Push"
+  when player_score > bank_score
+    return "Win"
   end
+
+  # Opcion con IF
+  # if player_score > 21 || player_score < bank_score
+  #   return "Lose"
+  # elsif player_score == 21
+  #   return "Black Jack"
+  # elsif player_score == bank_score
+  #   return "Push"
+  # elsif player_score > bank_score
+  #   return "Win"
+  # end
 end
