@@ -1,7 +1,13 @@
 def size_splitter(array, size)
-  # TODO: Return an array of two arrays, the first containing
-  #       words of length `size`, the second containing all the other words
-  #       In addition to this split, each array should be *sorted*.
+  new_array = []
+  array.chars.each_slice(size) do |num|
+    if block_given?
+      new_array.push(yield)
+    else
+      new_array.push(num)
+    end
+  end
+  return new_array
 end
 
 def block_splitter(array)
