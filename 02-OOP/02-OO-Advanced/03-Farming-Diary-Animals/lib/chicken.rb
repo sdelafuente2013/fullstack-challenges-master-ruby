@@ -1,15 +1,16 @@
 require_relative "animal"
 
 class Chicken < Animal
+  attr_reader :eggs
+
   def initialize(gender)
-    # super (energy, eggs)
-    @energy = 0
+    super()
     @eggs = 0
     @gender = gender
   end
 
   def feed!
-    @energy += 1
+    super()
     @gender == "male" ? @eggs += 0 : @eggs += 2
   end
 

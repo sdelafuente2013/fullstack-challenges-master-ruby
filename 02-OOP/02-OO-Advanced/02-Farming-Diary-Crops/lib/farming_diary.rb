@@ -13,7 +13,7 @@ corn_uno.water!
 # 3. Replace 'TODO' with the value of `grains` for your crop
 puts "The corn crop produced #{corn_uno.grains} grains"
 # 4. Replace 'TODO' with the state of the crop ('ripe' or 'not ripe')
-puts "The corn crop is #{corn_uno.ripe?}"
+puts "The corn crop is #{corn_uno.ripe? ? 'ripe' : 'not ripe'}"
 
 
 
@@ -27,7 +27,7 @@ rice_uno.transplant!
 # 4. Replace 'TODO' with the value of `grains` for your crop
 puts "The rice crop produced #{rice_uno.grains} grains"
 # 5. Replace 'TODO' with the state of the crop ('ripe' or 'not ripe')
-puts "The rice crop is #{rice_uno.ripe?}"
+puts "The rice crop is #{rice_uno.ripe? ? 'ripe' : 'not ripe'}"
 
 
 # DO NOT remove the two lines below, needed for display purposes
