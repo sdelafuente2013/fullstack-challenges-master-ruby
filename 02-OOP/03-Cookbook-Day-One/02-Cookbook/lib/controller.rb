@@ -33,6 +33,9 @@ class Controller
     # 3. Add to repo
     # Utiliza el repositorio para guardar esa receta generada
     @cookbook.add_recipe(recipe)
+
+    # 4. Muestra la lista actual
+    list
   end
 
   def destroy
@@ -47,5 +50,8 @@ class Controller
     # 3. Remove from repository
     # Utilizando el metodo del REPOSITORIO elimina el indice escogido
     @cookbook.remove_recipe(index)
+
+    # 4. Muestra la lista actual
+    list
   end
 end

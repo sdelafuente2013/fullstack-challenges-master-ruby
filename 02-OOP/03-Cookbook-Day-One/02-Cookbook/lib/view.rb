@@ -12,6 +12,7 @@ class View
   end
 
   def display(recipes)
+    puts "------------"
     recipes.each_with_index do |recipe, index|
       puts "#{index + 1} - #{recipe.name}"
     end
