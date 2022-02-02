@@ -16,9 +16,6 @@ DB.execute(create_statement)
 
 # Write your test code here (and run `ruby test.rb` in your terminal to run it):
 
-post_uno = Post.new(title: "Awesome article")
 
-# DB.execute("INSERT INTO posts (id, title, url, votes)
-# VALUES (5, 'Awesome article', 'www.google.com.ar', 5554 )")
-
+post_uno = Post.new(title: "Maria Becerra", url: "www.goo..", votes: 4548)
 post_uno.save
