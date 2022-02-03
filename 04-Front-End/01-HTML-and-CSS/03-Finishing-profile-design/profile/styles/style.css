@@ -1,0 +1,79 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Zen+Kurenaido&display=swap');
+
+/* Reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-color: #95A3B3;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #84DCC6;
+  font-family: 'Rowdies', cursive;
+}
+
+.card > * {
+  padding: 3% 0;
+}
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #b952db;
+  padding: 10px 20px !important;
+  border-radius: 4px;
+  font-weight: 800;
+}
+
+a:hover{
+  background-color: black;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 2%;
+}
+
+img{
+  width: 25%;
+  border-radius: 50%;
+}
+
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+}
+
+.card:first-child{
+  background-color: #4b4e6d28;
+  margin: 50px 0;
+  height: 450px;
+  box-shadow: 2px 3px 4px 5px rgba(0, 0, 0, 0.192);
+
+}
+
+.card:nth-child(2){
+  background-color: #4b4e6d28;
+  box-shadow: 2px 3px 4px 5px rgba(0, 0, 0, 0.192);
+  height: 200px
+}
+
+.card:nth-child(2) > *{
+  padding: 5% 0;
+}
+
+li a{
+  background-color: #a699aa;
+}
