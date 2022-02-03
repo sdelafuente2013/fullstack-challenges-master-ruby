@@ -1,0 +1,171 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&family=Zen+Kurenaido&display=swap');
+
+/* Reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #95A3B3;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #84DCC6;
+  font-family: 'Rowdies', cursive;
+  font-size: 2em;
+}
+
+.card > p, a{
+  padding: 2.3em 3em;
+}
+
+p{
+  font-size: 1.2em;
+}
+
+a{
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #b952db;
+  padding: 0.7em 1.3em !important;
+  border-radius: 0.5em;
+  font-weight: 800;
+}
+
+a:hover{
+  background-color: black;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 2%;
+}
+
+img{
+  width: 13em;
+  border-radius: 50%;
+  padding-top: 2em;
+}
+
+
+.container{
+  width: 30em;
+  margin: 0 auto;
+}
+
+.card:first-child{
+  background-color: #4b4e6d28;
+  margin: 50px 0;
+  height: 34em;
+  box-shadow: 2px 3px 4px 5px rgba(0, 0, 0, 0.192);
+
+}
+
+.card:nth-child(2){
+  background-color: #4b4e6d28;
+  height: 13em;
+  box-shadow: 2px 3px 4px 5px rgba(0, 0, 0, 0.192);
+}
+
+.card:nth-child(2) > *{
+  padding: 5% 0;
+}
+
+li a{
+  background-color: #a699aa;
+}
+
+@media (max-width: 960px) {
+  h1, h2, h3 {
+    font-size: 1.7em;
+  }
+
+  .card > p, a {
+    padding: 2em 0.3em;
+  }
+
+  img{
+    width: 10em;
+  }
+
+  .card:first-child{
+    height: 31em;
+  }
+
+  .card:nth-child(2){
+    height: 12em;
+  }
+
+  .container{
+    font-size: 1.1em;
+    width: 70%;
+  }
+}
+
+@media (max-width: 720px) {
+  h1, h2, h3 {
+    font-size: 1.3em;
+  }
+
+  .card > p, a {
+    padding: 2.3em 0.7em;
+  }
+
+  img{
+    width: 47%;
+  }
+
+  .card:first-child{
+    height: 29.2em;
+  }
+
+  .card:nth-child(2){
+    height: 10em;
+  }
+
+  .container{
+    width: 70%;
+  }
+
+  p{
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 540px) {
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+
+  .card > p, a {
+    padding: 2.5em 0.5em;
+  }
+
+  p{
+    font-size: 1.1em;
+  }
+
+  .container{
+    width: 70%;
+  }
+
+  img{
+    width: 7em;
+  }
+
+  .card:first-child{
+    height: 31em;
+  }
+
+  .card:nth-child(2){
+    height: 8em;
+  }
+}
