@@ -1,3 +1,5 @@
 def circle_area(radius)
-  # TODO: Implement the `circle_area` method
+  return 0 if radius.negative?
+
+  (radius**2) * 3.14
 end
