@@ -13,9 +13,7 @@ def colorful?(number)
     new_array << (new_array[0] * new_array[1] * new_array[2])
   end
 
-  if (new_array.length - new_array.uniq.length).zero?
-    return true
-  else
-    return false
-  end
+  return true if (new_array.length - new_array.uniq.length).zero?
+
+  false
 end

@@ -4,6 +4,5 @@ require "date"
 
 def age_in_days(day, month, year)
   # TODO: return the age expressed in days given the day, month, and year of birth
-  cantidad_years = Date.today.year - year
-  return cantidad_years * 365
+  (Date.today.year - year) * 365
 end
